@@ -1,0 +1,120 @@
+<!docktype html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>  
+Page D'accueil
+</title>
+<div id="textdiv"><center><h1 id="btntxt">Cest quoi intimidationenligne.com?</h1><h1 id="hptxt">IntimidationEnLigne.com est un projet scolaire créé par Corey Jardine dans l'espoir d'informer les gens sur la gravité de la cyberintimidation. Si vous êtes victime de cyberintimidation, cliquez sur le bouton <a href="contact.html">contactez-nous</a> et j'essaierai de vous aider autant que possible.Si vous voulez plus d'informations, cliquez sur le bouton <A href="info.html">informations</A>.</h1></center></div>
+<div id="info" class="button"><center><h1 id="btntxt"class="infotxt">Informations</h1></center></div>
+<div id="contact" class="button2"><center><h1 id="btntxt"class="contacttxt">Contactez-nous</h1></center></div>
+<script>
+    var info = document.getElementById('info');
+
+    info.style.cursor = 'pointer';
+    info.onclick = function() {
+        location.href="info.html"
+    };
+    var contact = document.getElementById("contact");
+
+    contact.style.cursor = 'pointer';
+    contact.onclick = function() {
+        location.href="contact.html"
+    }
+    function chbg(color) {
+    document.getElementById('infotxt').style.backgroundColor = color;
+}   
+    </script>
+<style> .IntimidationEnLigne {
+    color: rgb(214, 212, 212);
+    margin-top: -75px;
+    font-family: cursive;
+    font-weight:100px;
+    font-style:normal;
+    z-index: 2;
+}
+#textdiv {
+  width: 1200px;
+  height: 400px;
+  background-color: #1f1f1f42;
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+}
+.button{
+    background-color: #27272742;
+    align-items: center;
+}
+.button2 {
+    background-color: #27272742;
+    align-items: center;
+}
+#contact {
+    height: 100px;
+    width: 400px; 
+    z-index: 1;
+    margin-top: -100px;
+    margin-left: 950px;
+}
+.button:hover{
+    background-color: rgb(109, 103, 103)   
+}
+.button2:hover {
+    background-color: rgb(109, 103, 103);
+}
+body {
+    background-color: #414141;
+    z-index: 0;
+}
+#info {
+    height: 100px;
+    width: 400px; 
+    z-index: 1;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+#btntxt {
+    font-weight:100px;
+    font-style:normal;
+    z-index: 2;
+    color: rgb(214, 212, 212);   
+}
+#info h1 {
+vertical-align: middle;
+position: absolute;
+top: 55;
+left: 100;
+}
+#contact h1 {
+vertical-align: middle;
+position: absolute;
+bottom: 530;
+right: 100;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+}
+#hptxt {
+    color:  rgb(214, 212, 212);  
+    text-align: center;
+        /*corey hptext means homepage text */
+}
+    </style>
+    </head>
+    <body>
+        <center>
+        <H1 class="IntimidationEnLigne">
+            Intimidation En Ligne
+        </H1>
+        <br>
+
+        <br>
+        <footer id="footer">
+            intimidationenligne.com
+            </footer>
+        </center>
+</html>     
