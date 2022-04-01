@@ -39,6 +39,12 @@ Page D'accueil
     reloadtxt.onclick = function() {
         location.href="index.html"
     };
+    TooSmall(); {
+        location.href="TooSmall.html"
+    }
+    if (screen.width <= 1360) {
+        document.location ="TooSmall.html";
+    };
     </script>
 <style> .IntimidationEnLigne {
     color: rgb(214, 212, 212);
@@ -143,6 +149,7 @@ right: 100;
     left: 510px;
     opacity: 0;
 }
+
     </style>
     </head>
     <body>
@@ -159,4 +166,4 @@ right: 100;
             intimidationenligne.com
             </footer>
         </center>
-</html>     
+</html>
