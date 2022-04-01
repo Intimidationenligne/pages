@@ -8,8 +8,9 @@
 Page D'accueil
 </title>
 <div id="textdiv"><center><h1 id="btntxt">Cest quoi intimidationenligne.com?</h1><h1 id="hptxt">IntimidationEnLigne.com est un projet scolaire créé par Corey Jardine dans l'espoir d'informer les gens sur la gravité de la cyberintimidation. Si vous êtes victime de cyberintimidation, cliquez sur le bouton <a href="contact.html">contactez-nous</a> et j'essaierai de vous aider autant que possible.Si vous voulez plus d'informations, cliquez sur le bouton <A href="info.html">informations</A>.</h1></center></div>
-<div id="info" class="button"><center><h1 id="btntxt"class="infotxt">Informations</h1></center></div>
-<div id="contact" class="button2"><center><h1 id="btntxt"class="contacttxt">Contactez-nous</h1></center></div>
+<div id="info" class="button"></div>
+<div id="contact" class="button2"></div>
+<div id="ReloadDIV"></div>
 <script>
     var info = document.getElementById('info');
 
@@ -26,6 +27,18 @@ Page D'accueil
     function chbg(color) {
     document.getElementById('infotxt').style.backgroundColor = color;
 }   
+    var reload = document.getElementById('ReloadDIV');
+
+    reload.style.cursor = 'pointer';
+    reload.onclick = function() {
+        location.href="index.html"
+    };
+    var Reloadtxt = document.getElementById('ReloadTXT');
+
+    reloadtxt.style.cursor = 'pointer';
+    reloadtxt.onclick = function() {
+        location.href="index.html"
+    };
     </script>
 <style> .IntimidationEnLigne {
     color: rgb(214, 212, 212);
@@ -42,6 +55,7 @@ Page D'accueil
   position: absolute;
   bottom: 50px;
   right: 100px;
+  z-index: 999;
 }
 .button{
     background-color: #27272742;
@@ -61,10 +75,12 @@ Page D'accueil
     margin-left: 950px;
 }
 .button:hover{
-    background-color: rgb(109, 103, 103)   
+    background-color: rgb(109, 103, 103);
+    transform: translate(-10px);
 }
 .button2:hover {
     background-color: rgb(109, 103, 103);
+    transform: translate(-10px);
 }
 body {
     background-color: #414141;
@@ -105,13 +121,37 @@ right: 100;
     text-align: center;
         /*corey hptext means homepage text */
 }
+.contacttxt {
+    align-items: center;
+    margin-top: -60px;
+    margin-left: 952px;
+    z-index: 999;
+}
+.infotxt {
+    align-items: center;
+    margin-top: -60px;
+    margin-left: -975px;
+    z-index: 1000;
+}
+#ReloadDIV {
+    width: 350px;
+    height: 50px;
+    background-color: magenta;
+    z-index: 1001;
+    margin-top: -75px;
+    position: absolute;
+    left: 510px;
+    opacity: 0;
+}
     </style>
     </head>
     <body>
         <center>
-        <H1 class="IntimidationEnLigne">
+        <H1 id="ReloadTXT" class="IntimidationEnLigne">
             Intimidation En Ligne
         </H1>
+        <h1 id="btntxt"class="infotxt">Informations</h1>
+        <center><h1 id="btntxt"class="contacttxt">Contactez-nous</h1></center>
         <br>
 
         <br>
