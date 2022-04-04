@@ -44,11 +44,14 @@ Page D'accueil
     TooSmall(); {
         location.href="TooSmall.html"
     }
-    if (window.outerWidth <= 1360) {
-        TooSmall();
+    if ($(window). width() < 960) {
+        location.href="TooSmall.hmtl"
     };
+    window.mobileAndTabletCheck = TooSmall()
+;
     </script>
-<style> .IntimidationEnLigne {
+<style> 
+.IntimidationEnLigne {
     color: rgb(214, 212, 212);
     margin-top: -75px;
     font-family: cursive;
