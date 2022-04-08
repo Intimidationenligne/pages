@@ -62,11 +62,8 @@
         }
         </style>
         <script>
-        var backbutton = document.getElementById('backbutton');
-
-        backbutton.style.cursor = 'pointer';
-        backbutton.onclick = function() {
-        location.href="info.html"
+function back() {
+    location.href = "index.html"
 };
         </script>
 </head>
@@ -82,7 +79,7 @@
             intimidationenligne.github.io/intimidationenligne/
             </footer>
     </center>
-    <div id="backbutton"></div>
+    <div onclick="back()"id="backbutton"></div>
     <p id="backtxt">← Retour</p>
 </body>         
 </html>
