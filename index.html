@@ -1,6 +1,7 @@
 <!docktype html>
 <html lang="fr">
     <head>
+        <link rel="shortcut icon" href="Ecole_Odyssee_logo.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,10 +61,15 @@ Page D'accueil
         document.getElementById('moon').style.opacity = '1';
         document.getElementById("bulb").style['pointerEvents'] = 'none';
         document.getElementById('moon').style['pointerEvents'] = 'all';
-        document.body.style.backgroundColor = "#FFFFFF";
-        document.getElementById('textdiv').style.backgroundColor = '#d1d1d1';
+        document.body.style.backgroundColor = "#e8e8e8";
+        document.getElementById('textdiv').style.backgroundColor = '    background-color: #27272742;';
         document.getElementById('btntxt').style.color = '#000000';
         document.getElementById('hptxt').style.color = '#000000';
+        document.getElementById('info').style.color = '#d6d6d6';
+        document.getElementById('contact').style.color = '#d6d6d6';
+        document.getElementById('cbtntxt').style.color = '#000000';
+        document.getElementById('dbtntxt').style.color = '#000000';
+        document.getElementById('ltxt').style.color = '#000000';
     };
     function night() {
         document.getElementById('bulb').style.opacity = '1';
@@ -74,6 +80,11 @@ Page D'accueil
         document.getElementById('textdiv').style.backgroundColor = '#1f1f1f42';
         document.getElementById('btntxt').style.color = 'rgb(214, 212, 212)';
         document.getElementById('hptxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('info').style.color = '#27272742';
+        document.getElementById('contact').style.color = '#27272742';
+        document.getElementById('cbtntxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('dbtntxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('ltxt').style.color = 'rgb(214, 212, 212)';
     }
 
      </script>
@@ -96,12 +107,10 @@ Page D'accueil
   z-index: 999;
 }
 .button{
-    background-color: #27272742;
     align-items: center;
     transition: ease 0.5s;
 }
 .button2 {
-    background-color: #27272742;
     align-items: center;
     transition: ease 0.5s;
 }
@@ -111,6 +120,7 @@ Page D'accueil
     z-index: 1;
     margin-top: -100px;
     margin-left: 950px;
+    background-color: #27272742;
 }
 .button:hover{
     background-color: rgb(109, 103, 103);
@@ -131,12 +141,13 @@ body {
     z-index: 1;
     margin-top: 50px;
     margin-right: 100px;
+    background-color: #27272742;
 }
 #btntxt {
     font-weight:100px;
     font-style:normal;
     z-index: 2;
-    color: rgb(214, 212, 212);   
+    color: rgb(214, 212, 212); 
 }
 #info h1 {
 vertical-align: middle;
@@ -219,17 +230,31 @@ right: 100;
     font-weight:100px;
     font-style:normal;
     z-index: 2;
-    color: rgb(214, 212, 212);   
+    color: rgb(214, 212, 212);  
+    align-items: center;
+    margin-top: -60px;
+    margin-left: -975px;
+    z-index: 1000; 
+}
+#dbtntxt {
+    font-weight:100px;
+    font-style:normal;
+    z-index: 2;
+    color: rgb(214, 212, 212); 
+    align-items: center;
+    margin-top: -60px;
+    margin-left: 952px;
+    z-index: 999;
 }
     </style>
     </head>
     <body id="bodyl">
         <center>
-        <H1 id="ltxt" id="ReloadTXT" class="IntimidationEnLigne">
+        <H1 id="ltxt" class="IntimidationEnLigne">
             Intimidation En Ligne
         </H1>
-        <h1 id="btntxt"class="infotxt">Informations</h1>
-        <center><h1 id="btntxt"class="contacttxt">Contactez-nous</h1></center>
+        <h1 id="cbtntxt">Informations</h1>
+        <center><h1 id="dbtntxt">Contactez-nous</h1></center>
         <br>
 
         <br>
