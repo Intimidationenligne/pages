@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport"
-      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 <title>  
 Page D'accueil
 </title>
+<div onclick="help()"id="helpdiv"><center><p id="btntxth">L'aide?</p></center></div>
 <div id="textdiv"><center><h1 id="btntxt">Cest quoi intimidationenligne.com?</h1><h1 id="hptxt">IntimidationEnLigne.com est un projet scolaire créé par Corey Jardine dans l'espoir d'informer les gens sur la gravité de la cyberintimidation. Si vous êtes victime de cyberintimidation, cliquez sur le bouton <a href="contact.html">contactez-nous</a> et j'essaierai de vous aider autant que possible.Si vous voulez plus d'informations, cliquez sur le bouton <A href="info.html">informations</A>.</h1></center></div>
 <div id="info" class="button"></div>
 <div id="contact" class="button2"></div>
@@ -70,6 +69,7 @@ Page D'accueil
         document.getElementById('cbtntxt').style.color = '#000000';
         document.getElementById('dbtntxt').style.color = '#000000';
         document.getElementById('ltxt').style.color = '#000000';
+        document.getElementById('helpdiv').style.backgroundColor = '    background-color: #27272742;';
     };
     function night() {
         document.getElementById('bulb').style.opacity = '1';
@@ -85,8 +85,11 @@ Page D'accueil
         document.getElementById('cbtntxt').style.color = 'rgb(214, 212, 212)';
         document.getElementById('dbtntxt').style.color = 'rgb(214, 212, 212)';
         document.getElementById('ltxt').style.color = 'rgb(214, 212, 212)';
-    }
-
+        document.getElementById('helpdiv').style.backgroundColor = '#1f1f1f42';
+    };
+    function help() {
+        location.href="aide.html"
+    };
      </script>
 <style> 
 .IntimidationEnLigne {
@@ -103,7 +106,7 @@ Page D'accueil
   background-color: #1f1f1f42;
   position: absolute;
   bottom: 50px;
-  right: 100px;
+  right: 90px;
   z-index: 999;
 }
 .button{
@@ -149,6 +152,7 @@ body {
     z-index: 2;
     color: rgb(214, 212, 212); 
     transition: ease 0.5s;
+    vertical-align: middle;
 }
 #info h1 {
 vertical-align: middle;
@@ -195,6 +199,7 @@ right: 100;
     left: 510px;
     opacity: 0;
 }
+
 #bulb {
     width: 50px;
     height: 50px;
@@ -250,6 +255,36 @@ right: 100;
     z-index: 999;
     transition: ease 0.5s;
 }
+#helpdiv {
+    bottom: 0px;
+    margin-left: 600px;
+    height: 25px;
+    width: 200px;
+    background-color: #1f1f1f42;
+    z-index: 9999;
+    opacity: 1;
+    position: absolute;
+    transition: ease .5s;
+}
+#helpdiv:hover {
+    transform: translate(-10px);
+    background-color: rgb(109, 103, 103);
+}
+#ltxt {
+    transition: ease .5s;
+}
+#btntxth {
+    font-weight:100px;
+    font-style:normal;
+    z-index: 20000;
+    color: rgb(214, 212, 212); 
+    transition: ease 0.5s;
+    vertical-align: middle;
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    
+}
     </style>
     </head>
     <body id="bodyl">
@@ -265,6 +300,8 @@ right: 100;
         <footer id="footer">
             intimidationenligne.com
             </footer>
+        <center>
+        </center>
            <img onclick="light()"  src="https://cdn0.iconfinder.com/data/icons/sciences-research/512/bulb_light_idea-512.png" id="bulb"/>
             <img onclick="night()"  src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" id="moon"/>
         </center>
