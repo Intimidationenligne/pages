@@ -46,14 +46,32 @@
         }
         #helptext {
         /* corey make this centerd */
+            position: fixed;
+            margin-top: 40px;
+            font-weight: 100px;
+            margin-left: 130px;
+            color: rgb(214, 212, 212);
+        }
+        #rtxt {
+            position: fixed;
+            margin-left: 50px;
+            color: rgb(214, 212, 212);
+        }
+        #mtxt {
+            color: rgb(214, 212, 212);
+            font-family: cursive;
+            font-weight:80px;
+            font-style:normal;
+            z-index: 2;
+            margin-top: 0px;
         }
     </style>
 </head>
 <body>
-    <h1>Si les boutons fonctione pas asseyer de flotter ton cursor ou la fleche point </h1>
-    <div id="btnnw"><p id="helptext">INFORAMTIONS</p></div>
+    <h1 id="mtxt">Si les boutons ne fonctionnent pas, il suffit de faire flotter le curseur ou la flèche sur les boutons qui ne fonctionnent pas.</h1>
+    <div id="btnnw"><p id="helptext">INFORMATIONS</p></div>
     
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Short_left_arrow_-_red.png" id="img" />
-<div id="bbtn" onclick="back()"><p>Retour</p></div>
+<div id="bbtn" onclick="back()"><p id="rtxt">Retour</p></div>
 </body>
 </html>
