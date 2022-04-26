@@ -5,6 +5,9 @@
         function send() {
             window.open('mailto:intimidationenligne@gmail.com');
         }
+        function info() {
+            location.href="info.html";
+        }
         </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,8 +25,8 @@
             width: 400px;
             height: 100px;
             position: absolute;
-            top: 100px;
-            left: 475px;
+            top: 50px;
+            left: 485px;
             transition: ease 0.5s;
             border-color: #27272742;
             border-style: solid;
@@ -44,12 +47,16 @@
             align-items: center;
             transition: ease 0.5s;
             position: absolute;
-            top: 0px;
-            left: 0px;
+            top: 50px;
+            left: 10px;
             width: 400px;
             height: 100px;
         }
         #backbutton:hover {
+            background-color: rgb(109, 103, 103);
+            transform: translate(-10px);
+        }
+        #ibutton:hover {
             background-color: rgb(109, 103, 103);
             transform: translate(-10px);
         }
@@ -58,7 +65,25 @@
             text-align: center;
             position: absolute;
             left: 160px;
-            top: 25px;
+            top: 72px;
+        }
+        #ibutton {
+            background-color: #27272742;
+            align-items: center;
+            transition: ease 0.5s;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            width: 400px;
+            height: 100px;
+        }
+        #itxt {
+            color: rgb(214, 212, 212);
+            text-align: center;
+            position: absolute;
+            left: 1120px;
+            top: 72px;
+            z-index: 100;
         }
         </style>
         <script>
@@ -81,5 +106,7 @@ function back() {
     </center>
     <div onclick="back()"id="backbutton"></div>
     <p id="backtxt">← Retour</p>
+    <p id="itxt">Informations</p>
+    <div onclick="info()" id="ibutton"></div>
 </body>         
 </html>
