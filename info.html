@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <div onclick="rel()"id="ReloadDIV"><h2 id="txt">Informations</h2></div>
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactez-Nous</title>
+    <title>Informations</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #414141;
+            z-index: -1000000;
+            transition: ease 0.5s;
+        }
+        #ReloadDIV {
+            width: 400px;
+            height: 100px;
+            background-color: #27272742  !important;
+            z-index: 1;
+            top: 50px;
+            position: absolute;
+            left: 475px;
+            opacity: 1;
+            transition: ease 0.5s;
+        }
+        #ReloadDIV:hover {
+            transform: translate(-10px);
+            background-color:#91909042  !important;
+        }
+        #txt {
+            color: rgb(214, 212, 212);
+            margin-top: 30px;
+            font-family: cursive;
+            font-weight:100px;
+            font-style:normal;
+            z-index: 2;
+            margin-left: 115px;
+        }
+        </style>
+        <script>
+            function rel() {
+                location.href="info.html"
+            }
+            </script>
 </head>
 <body>
     
