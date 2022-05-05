@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
     <div onclick="rel()"id="ReloadDIV"><h2 id="txt">Informations</h2></div>
+    <div onclick="con()"id="cbtn"><h2 id=ctxt>Contactez-Nous</h2></div>
+    <div onclick="home()"id="hbtn"><h2 id="htxt">Index</h2></div>
+    <div onclick="src()"id="sbtn"><h2 id="stxt">Sources</h2></div>
 <head>
 
     <meta charset="UTF-8">
@@ -13,6 +16,8 @@
             background-color: #414141;
             z-index: -1000000;
             transition: ease 0.5s;
+            overflow-y: scroll;
+            height: 2000px;
         }
         #ReloadDIV {
             width: 400px;
@@ -38,10 +43,92 @@
             z-index: 2;
             margin-left: 115px;
         }
+        #cbtn {
+            width: 400px;
+            height: 100px;
+            background-color: #27272742  !important;
+            z-index: 1;
+            top: 50px;
+            position: absolute;
+            left: 25px;
+            opacity: 1;
+            transition: ease 0.5s;
+        }
+        #cbtn:hover {
+            transform: translate(-10px);
+            background-color:#91909042  !important;
+        }
+        #ctxt {
+            color: rgb(214, 212, 212);
+            margin-top: 30px;
+            font-family: cursive;
+            font-weight:100px;
+            font-style:normal;
+            z-index: 2;
+            margin-left: 100px;
+        }
+        #hbtn {
+            width: 400px;
+            height: 100px;
+            background-color: #27272742  !important;
+            z-index: 1;
+            top: 50px;
+            position: absolute;
+            left: 925px;
+            opacity: 1;
+            transition: ease 0.5s;
+        }
+        #htxt {
+            color: rgb(214, 212, 212);
+            margin-top: 30px;
+            font-family: cursive;
+            font-weight:100px;
+            font-style:normal;
+            z-index: 2;
+            margin-left: 155px;
+        }
+        #hbtn:hover {
+            transform: translate(-10px);
+            background-color:#91909042  !important;
+        }
+        #sbtn {
+            width: 100px;
+            height: 50px;
+            background-color: #27272742  !important;
+            z-index: 1;
+            bottom: -1500px;
+            position: absolute;
+            right: 0px;
+            opacity: 1;
+            transition: ease 0.5s;
+            align-items: center;
+        }
+        #sbtn:hover {
+            transform: translate(-10px);
+            background-color:#91909042  !important;
+        }
+        #stxt {
+            color: rgb(214, 212, 212);
+            bottom: 0px;
+            font-family: cursive;
+            font-weight:100px;
+            font-style:normal;
+            z-index: 2;
+
+        }
         </style>
         <script>
             function rel() {
                 location.href="info.html"
+            }
+            function con() {
+                location.href="contact.html"
+            }
+            function home() {
+                location.href="index.html"
+            }
+            function src() {
+                location.href="links.html"
             }
             </script>
 </head>
