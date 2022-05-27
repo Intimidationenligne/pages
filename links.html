@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sources</title>
+    <div id="back" onclick="home()"></div>
     <style>
                 body {
             margin: 0;
@@ -21,9 +22,51 @@
             font-style:normal;
             z-index: 2;
         }
+        #back {
+            width: 400px;
+            height: 100px;
+            background-color: #27272742  !important;
+            z-index: 1;
+            top: 0px;
+            position: absolute;
+            right: 0px;
+            opacity: 1;
+            transition: ease 0.5s;
+            align-items: center;
+        }
+        #back:hover {
+            transform: translate(-10px);
+            background-color:#91909042  !important;
+        }
+        #btxt {
+            color: rgb(214, 212, 212);
+            top: 10px;
+            font-family: cursive;
+            font-weight:100px;
+            font-style:normal;
+            z-index: 2;
+            right: 100px;
+            position: absolute;
+
+        }
     </style>
+            <script>
+                function rel() {
+                    location.href="info.html"
+                }
+                function con() {
+                    location.href="contact.html"
+                }
+                function home() {
+                    location.href="info.html"
+                }
+                function src() {
+                    location.href="links.html"
+                }
+                </script>
 </head>
 <body>
+    <h2 id="btxt">Informations →</h2>
     <h1>Cest quoi la Cyberintimidation?</h1>
     <h1>https://www.quebec.ca/famille-et-soutien-aux-personnes/violences/intimidation/cyberintimidation#:~:text=La%20cyberintimidation%20est%20un%20geste,messages%20textes%2C%20courriels%2C%20etc.</h1>
     <h1>Comment prévenir la Cyberintimidation?</h1>
