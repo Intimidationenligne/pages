@@ -14,6 +14,13 @@ Page D'accueil
 <div id="contact" class="button2"></div>
 <div id="ReloadDIV"></div>
 <script>
+    function closead() {
+        document.getElementById('x').style.opacity = '0';
+        document.getElementById('pop').style.opacity = '0';
+        document.getElementById('xtxt').style.opacity = '0';
+        document.getElementById('qnatxt1').style.opacity = '0';
+    };
+
     var info = document.getElementById('info');
 
     info.style.cursor = 'pointer';
@@ -92,6 +99,7 @@ Page D'accueil
     function help() {
         location.href="aide.html"
     };
+
      </script>
 <style> 
 .IntimidationEnLigne {
@@ -102,6 +110,34 @@ Page D'accueil
     font-style:normal;
     z-index: 2;
 }
+#pop {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 200px;
+    background-color: #2b2b2a;
+    z-index: 1018;
+    transition: ease 0.5s;
+}
+#x {
+    z-index: 1019;
+    background-color: #595959;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    transition: ease 0.5s;
+    opacity: 1;
+    right: 966px;
+    top: 449px;
+}
+#x:hover {
+    background-color: grey;
+
+}
+
 #textdiv {
   width: 1200px;
   height: 400px;
@@ -286,16 +322,38 @@ right: 100;
     left: 70px;
     
 }
+#xtxt {
+    z-index: 1000000000000000000001;
+    position: absolute;
+    top: 433;
+    left: 363;
+    transition: ease 0.5s;
+}
+#qnatxt1 {
+            color: rgb(214, 212, 212);
+            margin-top: 8px;
+            margin-right: 40px;
+            font-family: cursive;
+            font-weight:100px;
+            font-style:normal;
+            z-index: 2;
+            transition: ease 0.5s;
+        }
         /* "doug" -marshall 2022*/
     </style>
     </head>
     <body id="bodyl">
+       <h1 id="xtxt">
+           X
+       </h1>
         <center>
         <H1 id="ltxt" class="IntimidationEnLigne">
             Intimidation En Ligne
         </H1>
         <h1 id="cbtntxt">Informations</h1>
-        <center><h1 id="dbtntxt">Contactez-nous</h1></center>
+        <center>
+            <h1 id="dbtntxt">Contactez-nous</h1>
+        </center>
         <br>
 
         <br>
@@ -304,6 +362,8 @@ right: 100;
             </footer>
         <center>
         </center>
+        <div id="pop"><h2 id="qnatxt1">Attention!</h2></div>
+<div id="x" onclick="closead()"></div>
            <img onclick="light()"  src="https://cdn0.iconfinder.com/data/icons/sciences-research/512/bulb_light_idea-512.png" id="bulb"/>
             <img onclick="night()"  src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" id="moon"/>
         </center>
