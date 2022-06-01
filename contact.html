@@ -12,44 +12,29 @@
         function info() {
             location.href="info.html";
         }
-        function light() {
+        function lightc() {
         document.getElementById('bulb').style.opacity = '0';
         document.getElementById('moon').style.opacity = '1';
         document.getElementById("bulb").style['pointerEvents'] = 'none';
         document.getElementById('moon').style['pointerEvents'] = 'all';
         document.body.style.backgroundColor = "#e8e8e8";
-        document.getElementById('textdiv').style.backgroundColor = '    background-color: #27272742;';
+        document.getElementById('itxt').style.color = '#000000';
+        document.getElementById('contactbutton').style.color = '#000000';
         document.getElementById('backtxt').style.color = '#000000';
         document.getElementById('btntxt').style.color = '#000000';
-        document.getElementById('btntxt').style.color = '#000000';
-        document.getElementById('btntxt').style.color = '#000000';
         document.getElementById('hptxt').style.color = '#000000';
-        document.getElementById('info').style.color = '#d6d6d6';
-        document.getElementById('contact').style.color = '#d6d6d6';
-        document.getElementById('cbtntxt').style.color = '#000000';
-        document.getElementById('dbtntxt').style.color = '#000000';
-        document.getElementById('ltxt').style.color = '#000000';
-        document.getElementById('helpdiv').style.backgroundColor = '    background-color: #27272742;';
-        document.getElementById('btntxth').style.color = '#000000';
     };
-    function night() {
+    function nightc() {
         document.getElementById('bulb').style.opacity = '1';
         document.getElementById('moon').style.opacity = '0';
         document.getElementById('bulb').style['pointerEvents'] = 'all';
         document.getElementById('moon').style['pointerEvents'] = 'none';
         document.body.style.backgroundColor = '#414141';
-        document.getElementById('textdiv').style.backgroundColor = '#1f1f1f42';
-        document.getElementById('btntxt').style.color = 'rgb(214, 212, 212)';
-        document.getElementById('textdiv').style.backgroundColor = '#1f1f1f42';
+        document.getElementById('itxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('contactbutton').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('backtxt').style.color = 'rgb(214, 212, 212)';
         document.getElementById('btntxt').style.color = 'rgb(214, 212, 212)';
         document.getElementById('hptxt').style.color = 'rgb(214, 212, 212)';
-        document.getElementById('info').style.color = '#27272742';
-        document.getElementById('contact').style.color = '#27272742';
-        document.getElementById('cbtntxt').style.color = 'rgb(214, 212, 212)';
-        document.getElementById('dbtntxt').style.color = 'rgb(214, 212, 212)';
-        document.getElementById('ltxt').style.color = 'rgb(214, 212, 212)';
-        document.getElementById('helpdiv').style.backgroundColor = '#1f1f1f42';
-        document.getElementById('btntxth').style.color = 'rgb(214, 212, 212)';
     };
     function back() {
     location.href = "index.html"
@@ -154,7 +139,8 @@
             vertical-align: middle;
             position: fixed;
             left: 500px;
-        
+            top: 220px;
+            transition: ease 0.5s;
         }
         #hptxt {
             color:  rgb(214, 212, 212);
@@ -165,8 +151,8 @@
             bottom: 120px;
             width: 1000px;
             height: 200px;
-            left: 100px;
-            transition: ease 0.5s;
+            left: 160px;
+
         }
             #bulb {
             width: 50px;
@@ -219,8 +205,10 @@
     <p id="backtxt">← Retour</p>
     <p id="itxt">Informations</p>
     <div onclick="info()" id="ibutton"></div>
-    <div id="ctxt"><h1 id="btntxt">Comment Nous contacter ?</h1><h2 id="hptxt">Si vous vous demandez comment nous contacter par e-mail, cliquez sur le bouton "contactez-nous". Si vous souhaitez obtenir des informations sur la cyberintimidation, cliquez sur le bouton <a href="info.html">"informations"</a>.</h2></div>
-    <img onclick="light()"  src="https://cdn0.iconfinder.com/data/icons/sciences-research/512/bulb_light_idea-512.png" id="bulb"/>
-    <img onclick="night()"  src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" id="moon"/>
+    <h1 id="btntxt">Comment Nous contacter ?</h1>
+    <h2 id="hptxt">Si vous vous demandez comment nous contacter par e-mail, cliquez sur le bouton "contactez-nous". Si vous souhaitez obtenir des informations sur la cyberintimidation, cliquez sur le bouton <a href="info.html">"informations"</a>.</h2>
+    <div id="ctxt"></div>
+    <img onclick="lightc()"  src="https://cdn0.iconfinder.com/data/icons/sciences-research/512/bulb_light_idea-512.png" id="bulb"/>
+    <img onclick="nightc()"  src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" id="moon"/>
 </body>         
 </html>
