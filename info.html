@@ -25,6 +25,39 @@
             overflow-y: scroll;
             height: 2000px;
         }
+        #bulb {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    transition: ease 0.5s;
+    z-index: 100;
+}
+#moon {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    opacity: 0;
+    transition: ease 0.5s;
+    bottom: 0px;
+    right: 0px;
+    pointer-events: none;
+}
+#bulb:hover img {
+    background-color: rgb(214, 212, 212);
+    display: block;
+    z-index: 99;
+    transform: translate(-10px);
+    transition: ease 0.5s;
+}
+#moon:hover img {
+    background-color: rgb(214, 212, 212);
+    display: block;
+    z-index: 100;
+    transform: translate(-10px);
+    transition: ease 0.5s;
+}
         #qnatxt1 {
             color: rgb(214, 212, 212);
             margin-top: 30px;
@@ -220,9 +253,66 @@
             function src() {
                 location.href="links.html"
             }
+            function light() {
+        document.getElementById('bulb').style.opacity = '0';
+        document.getElementById('moon').style.opacity = '1';
+        document.getElementById("bulb").style['pointerEvents'] = 'none';
+        document.getElementById('moon').style['pointerEvents'] = 'all';
+        document.body.style.backgroundColor = "#e8e8e8";
+        document.getElementById('textdiv').style.backgroundColor = '    background-color: #27272742;';
+        document.getElementById('btntxt').style.color = '#000000';
+        document.getElementById('hptxt').style.color = '#000000';
+        document.getElementById('info').style.color = '#d6d6d6';
+        document.getElementById('contact').style.color = '#d6d6d6';
+        document.getElementById('cbtntxt').style.color = '#000000';
+        document.getElementById('dbtntxt').style.color = '#000000';
+        document.getElementById('ltxt').style.color = '#000000';
+        document.getElementById('helpdiv').style.backgroundColor = '    background-color: #27272742;';
+        document.getElementById('btntxth').style.color = '#000000';
+        document.getElementById('qnatxt1').style.color = '#000000';
+        document.getElementById('qnatxt2').style.color = '#000000';
+        document.getElementById('pop').style.backgroundColor = '#6f706f';
+        Document.getElementById('qna1').style.backgroundColor = '#404240';
+        Document.getElementById('qna2').style.backgroundColor = '#404240';
+        Document.getElementById('qna3').style.backgroundColor = '#404240';
+        Document.getElementById('qna4').style.backgroundColor = '#404240';
+        Document.getElementById('qna5').style.backgroundColor = '#404240';
+        Document.getElementById('qna6').style.backgroundColor = '#404240';
+        Document.getElementById('qna').style.backgroundColor = '#404240';
+    };
+    function night() {
+        document.getElementById('bulb').style.opacity = '1';
+        document.getElementById('moon').style.opacity = '0';
+        document.getElementById('bulb').style['pointerEvents'] = 'all';
+        document.getElementById('moon').style['pointerEvents'] = 'none';
+        document.body.style.backgroundColor = '#414141';
+        document.getElementById('textdiv').style.backgroundColor = '#1f1f1f42';
+        document.getElementById('btntxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('hptxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('info').style.color = '#27272742';
+        document.getElementById('contact').style.color = '#27272742';
+        document.getElementById('cbtntxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('dbtntxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('ltxt').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('helpdiv').style.backgroundColor = '#1f1f1f42';
+        document.getElementById('btntxth').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('qnatxt1').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('qnatxt2').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('pop').style.backgroundColor = '#2b2b2a ';
+        Document.getElementById('qna1').style.backgroundColor = '#27272742';
+        Document.getElementById('qna2').style.backgroundColor = '#27272742';
+        Document.getElementById('qna3').style.backgroundColor = '#27272742';
+        Document.getElementById('qna4').style.backgroundColor = '#27272742';
+        Document.getElementById('qna5').style.backgroundColor = '#27272742';
+        Document.getElementById('qna6').style.backgroundColor = '#27272742';
+        Document.getElementById('qna').style.backgroundColor = '#27272742';
+
+    };
             </script>
 </head>
 <body>
+    <img onclick="light()"  src="https://cdn0.iconfinder.com/data/icons/sciences-research/512/bulb_light_idea-512.png" id="bulb"/>
+            <img onclick="night()"  src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" id="moon"/>
     <h2 id="stxt">Sources</h2>
 </body>
 </html>

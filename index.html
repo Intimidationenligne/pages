@@ -78,6 +78,9 @@ Page D'accueil
         document.getElementById('ltxt').style.color = '#000000';
         document.getElementById('helpdiv').style.backgroundColor = '    background-color: #27272742;';
         document.getElementById('btntxth').style.color = '#000000';
+        document.getElementById('qnatxt1').style.color = '#000000';
+        document.getElementById('qnatxt2').style.color = '#000000';
+        document.getElementById('pop').style.backgroundColor = '#6f706f';
     };
     function night() {
         document.getElementById('bulb').style.opacity = '1';
@@ -95,6 +98,10 @@ Page D'accueil
         document.getElementById('ltxt').style.color = 'rgb(214, 212, 212)';
         document.getElementById('helpdiv').style.backgroundColor = '#1f1f1f42';
         document.getElementById('btntxth').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('qnatxt1').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('qnatxt2').style.color = 'rgb(214, 212, 212)';
+        document.getElementById('pop').style.backgroundColor = '#2b2b2a '
+        
     };
     function help() {
         location.href="aide.html"
@@ -118,11 +125,11 @@ Page D'accueil
     width: 400px;
     height: 200px;
     background-color: #2b2b2a;
-    z-index: 1018;
+    z-index: 103;
     transition: ease 0.5s;
 }
 #x {
-    z-index: 1019;
+    z-index: 104;
     background-color: #595959;
     width: 50px;
     height: 50px;
@@ -145,7 +152,7 @@ Page D'accueil
   position: absolute;
   bottom: 50px;
   right: 90px;
-  z-index: 999;
+  z-index: 102;
 }
 .button{
     align-items: center;
@@ -331,13 +338,26 @@ right: 100;
 }
 #qnatxt1 {
             color: rgb(214, 212, 212);
-            margin-top: 8px;
+            margin-top: 288px;
+            left: 125px;
+            font-family: cursive;
+            font-weight:100px;
+            font-style:normal;
+            z-index: 200;
+            transition: ease 0.5s;
+            position: absolute;
+        }
+        #qnatxt2 {
+            color: rgb(214, 212, 212);
+            margin-top: 340px;
             margin-right: 40px;
             font-family: cursive;
             font-weight:100px;
             font-style:normal;
-            z-index: 2;
+            z-index: 200;
             transition: ease 0.5s;
+            position: absolute;
+            width: 375PX;
         }
         /* "doug" -marshall 2022*/
     </style>
@@ -362,7 +382,9 @@ right: 100;
             </footer>
         <center>
         </center>
-        <div id="pop"><h2 id="qnatxt1">Attention!</h2><h3 id="qnatxt1">Si vous avez une résolution anormale / téléphonique, ce site web peut être faussé.</h3></div>
+        <div id="pop"></div>
+        <h2 id="qnatxt1">Attention!</h2>
+        <h3 id="qnatxt2">Si vous avez une résolution anormale / téléphonique, ce site web peut être faussé.</h3>
 <div id="x" onclick="closead()"></div>
            <img onclick="light()"  src="https://cdn0.iconfinder.com/data/icons/sciences-research/512/bulb_light_idea-512.png" id="bulb"/>
             <img onclick="night()"  src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" id="moon"/>
